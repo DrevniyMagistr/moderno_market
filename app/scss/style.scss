@@ -2,6 +2,7 @@
 @import "global";
 @import "fonts";
 
+// start header
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -33,7 +34,7 @@
   margin-left: 7px;
 }
 
-.headr__menu {
+.header__menu {
   background-color: $bg;
 }
 
@@ -56,7 +57,9 @@
     font-weight: 500;
   }
 }
+// end header
 
+// start search
 .search {
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,3 +111,59 @@
     }
   }
 }
+// end search
+
+// start products
+.products {
+  padding: 110px 0px;
+  background-color: $grey;
+}
+
+.products__inner-btn {
+  text-align: center;
+  margin-bottom: 60px;
+  height: 37px;
+  font-size: 14px;
+  button {
+    padding: 12px 21px;
+    background-color: #fff;
+    color: $bg;
+    border: none;
+    cursor: pointer;
+    & + button {
+      margin-left: 5px;
+    }
+  }
+}
+
+.products__item {
+  max-width: 442px;
+  width: 100%;
+  &-img {
+    min-height: 250px;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center center;
+    block-size: cover;
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+  }
+  &-name {
+    max-width: 310px;
+  }
+  &-title {
+    color: $bg;
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+  }
+  &-category {
+    display: block;
+  }
+}
+
+// end products
