@@ -2,6 +2,7 @@
 @import "global";
 @import "fonts";
 
+// start header
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -56,7 +57,9 @@
     font-weight: 500;
   }
 }
+// end header
 
+// start search
 .search {
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,58 +111,59 @@
     }
   }
 }
+// end search
 
-.gallery {
-  padding-top: 120px;
+// start products
+.products {
+  padding: 110px 0px;
+  background-color: $grey;
 }
 
-.gallery__title {
-  color: $bg;
-  font-size: 36px;
-  font-family: "Roboto-Regular", sans-serif;
-  font-weight: 700;
+.products__inner-btn {
   text-align: center;
-}
-
-.gallery__menu-list {
-  padding: 60px 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  & a {
-    
-    margin-left: 6px;
-    text-decoration: none;
-    box-shadow: 0 2px 5px rgba(202, 215, 228, 0.75);
-    padding: 13px 27px;
-    font-family: "Roboto-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: #263238;
-    background: #ffffff;
-    transition: 0.5s;
+  margin-bottom: 60px;
+  height: 37px;
+  font-size: 14px;
+  button {
+    padding: 12px 21px;
+    background-color: #fff;
+    color: $bg;
+    border: none;
+    cursor: pointer;
+    & + button {
+      margin-left: 5px;
+    }
   }
 }
 
-.gallery__menu-list a:hover,
-.gallery__menu-list .active {
-  background: #e74c3c;
-  color: #ffffff;
-}
-
-.gallery__dashboard{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 0 30px;
-}
-
-.gallery__item-description {
-  & a{
-    color: #8bc34a;
-    font-size: 14px;
+.products__item {
+  max-width: 442px;
+  width: 100%;
+  &-img {
+    min-height: 250px;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center center;
+    block-size: cover;
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+  }
+  &-name {
+    max-width: 310px;
+  }
+  &-title {
+    color: $bg;
     font-weight: 500;
+    font-size: 18px;
+    display: block;
+  }
+  &-category {
+    display: block;
   }
 }
+
+// end products
