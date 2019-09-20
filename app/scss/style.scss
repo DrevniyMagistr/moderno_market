@@ -54,7 +54,7 @@
   a {
     color: #fff;
     font-size: 14px;
-   @include f500;
+    @include f500;
   }
 }
 // end header
@@ -271,41 +271,38 @@
 
 // start advantages
 
-.advantages{
+.advantages {
   background-color: $bg;
   padding: 110px 0;
-
 }
 
-.advantages__title{
-  color:#fff;
+.advantages__title {
+  color: #fff;
   margin-bottom: 80px;
-
 }
-.advantages__inner{
+.advantages__inner {
   display: flex;
   justify-content: space-between;
 }
-.advantages__item{
+.advantages__item {
   max-width: 370px;
   text-align: center;
   padding: 0 15px;
-  
-  &:hover{
-    .advantages__item-images{
-      background-color: $green;
 
+  &:hover {
+    .advantages__item-images {
+      background-color: $green;
     }
-    .advantages__item-title{
+    .advantages__item-title {
       color: $green;
     }
-    .advantages__item-images{
-      path{
+    .advantages__item-images {
+      path {
         fill: white;
       }
     }
   }
-  &-images{
+  &-images {
     width: 114px;
     height: 114px;
     background-color: #fff;
@@ -314,34 +311,72 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto 30px;
-    transition: all .5s;
+    transition: all 0.5s;
   }
-  &-title{
+  &-title {
     margin-bottom: 25px;
     font-size: 24px;
-    color:#fff;
+    color: #fff;
     @include f500;
-    transition: all .5s;
+    transition: all 0.5s;
   }
-  &-text{
-    color:#b0bec5;
+  &-text {
+    color: #b0bec5;
     font-size: 15px;
   }
 }
 
-.icosvg-1{
-  svg{
+.icosvg-1 {
+  svg {
     width: 50px;
-  }  
+  }
 }
-.icosvg-2{
-  svg{
+.icosvg-2 {
+  svg {
     width: 70px;
-  }  
+  }
 }
-.icosvg-3{
-  svg{
+.icosvg-3 {
+  svg {
     width: 86px;
-  }  
+  }
 }
 // end advantages
+
+// start author
+.author {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $green;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin-right: 45px;
+    max-width: 263px;
+    span {
+      @include f700;
+    }
+  }
+  &__link {
+    font-size: 18px;
+    line-height: 36px;
+    color: $bg;
+    padding: 14px 40px;
+    background-color: #fff;
+  }
+}
+// end author
