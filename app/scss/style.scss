@@ -410,3 +410,50 @@
   }
 }
 // end tutorial
+
+// start footer
+.footer{
+  background-color: $bg;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px 80px;
+  }
+}
+
+.footer__col{
+  max-width: 270px;
+  &-menu{
+    max-width: 220px;
+  }
+  &-title{
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    color:#fff; 
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    &::after{
+      content:'';
+      position: absolute;
+      bottom: 0;
+      left: 2px;
+      width: 51px;
+      height: 3px;
+      background-color:$green;
+    }
+  }
+}
+
+.footer__copy{
+  border-top: 1px solid #424d53;
+&-text{
+  text-align: center;
+  color: #919699;
+  min-height: 75px;
+  line-height: 36px;
+  padding: 25px 0;
+}
+}
+
+// end footer
