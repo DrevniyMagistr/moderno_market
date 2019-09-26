@@ -928,3 +928,36 @@ button.icon-unsorted {
   }
 }
 // end product-page
+
+// start about
+.about-page__inner {
+  background-color: #fff;
+  border:1px solid #d7d7d7;
+  margin-bottom: 140px;
+}
+.about-page__text{
+  padding: 0px 65px 50px 50px; 
+}
+.about-page__title {
+  padding:20px 30px;
+  font-size: 24px;
+  line-height: 60px;
+  @include f500;
+  color:$bg;
+  border-bottom:1px solid #d7d7d7;
+}
+.about-text__title{
+  
+  padding-top: 45px;
+  padding-bottom: 20px;
+  color:#444;
+  font-size: 20px;
+  line-height: 24px;
+  @include f700;
+  
+}
+.about-text{
+  color:#707070;
+  line-height: 24px;
+}
+// end about
