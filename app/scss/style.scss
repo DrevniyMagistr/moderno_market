@@ -1188,6 +1188,115 @@ button.icon-unsorted {
 }
 // end product-page
 
+// start about product card
+.product-card {
+  padding-bottom: 100px;
+}
+.product-card__inner {
+  display: flex;
+}
+.product-card__content {
+  margin-right: 31px;
+  max-width: 870px;
+}
+.product-card__images-inner {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+}
+.product-card__images {
+  max-width: 829px;
+  height: 422px;
+  width: 100%;
+  // background-image: url(images/content/product_img/gtbuilder.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product-card__title {
+  font-size: 30px;
+  color: $bg;
+  line-height: 40px;
+  @include f500;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.product-card__text {
+  font-size: 16px;
+  color: #707070;
+  margin-bottom: 35px;
+  margin-top: 20px;
+}
+
+.product-card__box {
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.product-card__link {
+  a {
+    font-size: 14px;
+    padding: 16px 8px;
+    width: 150px;
+    color: $grey;
+    & + a {
+      margin-left: 20px;
+    }
+  }
+}
+.link-live {
+  background-color: $orange;
+}
+.link-screenshots {
+  background-color: #455a64;
+}
+.link-documentation {
+  background-color: $green;
+}
+.product-card__social {
+  a {
+    width: 54px;
+    height: 50px;
+    position: relative;
+    & + a {
+      margin-left: 3px;
+    }
+    &::before {
+      font-size: 18px;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .icon-facebook {
+    background-color: #6370b6;
+  }
+  .icon-twitter {
+    background-color: #64b5f6;
+  }
+  .icon-linkedin {
+    background-color: #4f71ce;
+  }
+  .icon-pinterest-p {
+    background-color: #d32f2f;
+  }
+}
+.product-card__more-title{
+  font-size: 18px;
+  color:$bg;
+  @include f500;
+  padding: 18px 25px;
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+}
+// end start about product card
+
 // start about
 .about-page__inner {
   background-color: #fff;
