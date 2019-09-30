@@ -104,6 +104,7 @@
   }
 }
 .basket {
+  margin-right: 20px;
   span {
     background-color: $green;
   }
@@ -134,7 +135,6 @@
   }
 }
 .user {
-  margin-left: 20px;
   margin-right: 25px;
   padding-right: 20px;
   position: relative;
@@ -197,6 +197,7 @@
   overflow: hidden;
   border-top: 1px solid #e0e0e0;
   transition: all 0.3s;
+  z-index: 1;
 }
 .basket__box,
 .notification__box,
@@ -204,14 +205,14 @@
   margin-top: 54px;
   margin-left: 15px;
   &:hover {
-    .header__circle::before{
-      color:$bg;
+    .header__circle::before {
+      color: $bg;
     }
     .circle__menu {
       overflow: hidden;
       height: auto;
     }
-    .circle__item{
+    .circle__item {
       padding: 23px;
       border-width: 1px;
     }
@@ -311,7 +312,10 @@
 .icons-color::before {
   color: $orange;
 }
-
+.header__btn-menu,
+.menu__btn {
+  display: none;
+}
 // end header
 
 // start search
@@ -1212,3 +1216,5 @@ button.icon-unsorted {
   color: #707070;
 }
 // end about
+
+@import "media";
