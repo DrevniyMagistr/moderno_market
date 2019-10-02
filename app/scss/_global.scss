@@ -30,6 +30,7 @@ body {
   line-height: 24px;
   color: $text;
   overflow-x: hidden;
+  background-color: $grey;
 }
 
 .wrapper {
@@ -59,6 +60,10 @@ body {
   .container-fluid {
     padding: 0 15px;
   }
+}
+
+.product__item{
+  background-color: #fff;
 }
 
 .page-content{
