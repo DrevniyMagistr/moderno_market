@@ -1375,6 +1375,130 @@ button.icon-unsorted {
     width: 100%;
   }
 }
+.price__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.price__product {
+  font-size: 22px;
+  @include f500;
+  color: $red;
+}
+.product__price {
+  button {
+    color: #fff;
+    margin-bottom: 7px;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    border: none;
+    background-color: $text;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 17px 5px 15px;
+    cursor: pointer;
+    &::before {
+      font-weight: 400;
+      font-family: "icomoon";
+      padding-right: 8px;
+    }
+  }
+  .icon-shopping-cart {
+    background-color: $green;
+  }
+  .icon-heart-o {
+    background-color: #42a5f5;
+  }
+}
+.product-author__box {
+  display: flex;
+  padding: 25px 0;
+}
+.author__avatar {
+  margin-right: 14px;
+}
+.author__info-name {
+  font-size: 18px;
+  color: $bg;
+  margin-bottom: 2px;
+}
+.author__info-link {
+  color: #707070;
+  font-size: 13px;
+  padding: 6px 9px 5px;
+  border: 1px solid #ccc;
+}
+.author__awards-list {
+  li {
+    width: 34px;
+    height: 37px;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    &::before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 6px;
+    }
+    & + li {
+      margin-left: 4px;
+    }
+  }
+  .icon-meh-o {
+    background-image: url(../images/awards-bg1.png);
+  }
+  .icon-pagelines {
+    background-image: url(../images/awards-bg2.png);
+  }
+  .icon-flash {
+    background-image: url(../images/awards-bg3.png);
+  }
+  .icon-foursquare {
+    background-image: url(../images/awards-bg4.png);
+  }
+  .icon-yen {
+    background-image: url(../images/awards-bg5.png);
+  }
+}
+.aside__item-sales {
+  padding-top: 23px;
+  color: #707070;
+  font-size: 16px;
+  @include f300;
+  span {
+    font-size: 20px;
+    @include f700;
+    color: $bg;
+    padding-right: 17px;
+    &:before {
+      content: "\f07a";
+      font-family: "icomoon";
+      color: #a6b5bb;
+      padding-right: 20px;
+    }
+  }
+}
+.aside__item .sales-number {
+  padding-bottom: 25px;
+}
+.information__line {
+  font-size: 14px;
+  color: #70838d;
+  margin-top: 20px;
+  line-height: 18px;
+  span {
+    color: $bg;
+    @include f500;
+    margin-right: 5px;
+  }
+}
+
 // end about product card
 
 // start about
