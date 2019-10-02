@@ -318,6 +318,105 @@
 }
 // end header
 
+// start modal
+#modal {
+  background-color: $green;
+  max-width: 730px;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+.login__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 40px;
+  @include f700;
+}
+.login__wrapper {
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  label {
+    position: relative;
+    display: block;
+    width: 100%;
+    &::before {
+      position: absolute;
+      font-family: "icomoon";
+      font-size: 14px;
+      color: #fff;
+      left: 18px;
+      top: 9px;
+    }
+  }
+  .login__label-name::before {
+    content: "\f007";
+  }
+  .login__label-pass::before {
+    content: "\f023";
+  }
+  input {
+    height: 43px;
+    margin-bottom: 8px;
+    border: none;
+    background-color: #76ae36;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 40px;
+    display: block;
+    width: 100%;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+  button {
+    margin-top: 19px;
+    background-color: #fff;
+    width: 140px;
+    padding: 18px 0 16px;
+    text-transform: uppercase;
+    border: none;
+    margin-right: 10px;
+    @include f700;
+    columns: #000000;
+    text-align: center;
+    box-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
+  }
+  .creat-acc {
+    margin-top: 19px;
+    padding: 14px 0px 14px 28px;
+    border: none;
+    background-color: #76ae36;
+    color: #fff;
+    text-align: center;
+    width: 245px;
+    font-size: 18px;
+    box-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
+    position: relative;
+    &::before {
+      content: "\f044";
+      position: absolute;
+      top: 15px;
+      left: 35px;
+      font-family: "icomoon";
+    }
+  }
+
+  .lost-pass {
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+  }
+}
+.fancybox-button svg path {
+  color: #fff;
+}
+// end modal
+
 // start search
 .search {
   background-repeat: no-repeat;
