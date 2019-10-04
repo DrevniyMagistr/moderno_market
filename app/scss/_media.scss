@@ -1,6 +1,18 @@
 // @import "vars";
 // @import "global";
 // @import "fonts";
+@media (max-width: 1200px) {
+  .withdrawals__inner {
+    display: block;
+  }
+  .withdrawals__col {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .withdrawals__content-item {
+    max-width: 490px;
+  }
+}
 
 @media (max-width: 1150px) {
   .footer__inner {
@@ -13,6 +25,19 @@
   }
   .header__text {
     display: none;
+  }
+  .user__box,
+  .basket__box,
+  .notification__box,
+  .messege__box {
+    z-index: 1;
+  }
+}
+@media (max-width: 960px) {
+  .page-404__404::after {
+    background-size: cover;
+    width: 50px;
+    height: 100px;
   }
 }
 @media (max-width: 900px) {
@@ -66,6 +91,18 @@
     }
   }
 }
+@media (max-width: 740px) {
+  .page-404__404 {
+    font-size: 200px;
+    padding-bottom: 0px;
+    line-height: 200px;
+  }
+  .page-404__wrapper,
+  .contact__wrapper {
+    margin-bottom: 80px;
+  }
+}
+
 @media (max-width: 640px) {
   .notification__box,
   .messege__box {
@@ -86,12 +123,45 @@
       margin-top: 30px;
     }
   }
+  .withdrawals__content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .withdrawals__content-item {
+    min-width: 490px;
+  }
+  .withdrawals__content-items {
+    overflow-x: scroll;
+  }
+  .page-404__404 {
+    font-size: 150px;
+    line-height: 150px;
+  }
+  .page-404__title {
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 26px;
+  }
+  .page-404__text {
+    font-size: 14px;
+    max-width: 420px;
+    padding-bottom: 40px;
+  }
+  .page-404__link a {
+    font-size: 12px;
+    padding: 10px 20px 8px;
+    margin-bottom: 40px;
+  }
+  .page-404__wrapper,
+  .contact__wrapper {
+    margin-bottom: 60px;
+  }
+  .about-page__text {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 520px) {
-  // .header {
-  //   overflow: hidden;
-  // }
   .header__btn-menu {
     display: block;
   }
@@ -159,6 +229,26 @@
   .user__images {
     margin-right: 0;
   }
+  .page-404__404::after {
+    margin-left: 0;
+    right: 44%;
+    top: 32px;
+  }
+  .page-404__text {
+    padding-bottom: 10px;
+    margin: 10px;
+  }
+  .about-page__inner {
+    margin-bottom: 20px;
+  }
+  .about-text__title {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .about-page__title {
+    text-align: center;
+    padding: 10px auto;
+  }
 }
 
 @media (max-width: 391px) {
@@ -170,7 +260,7 @@
   .basket__box {
     margin-left: 0;
   }
-  .menu__btn{
+  .menu__btn {
     left: 10px;
   }
 }
