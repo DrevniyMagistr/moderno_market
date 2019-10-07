@@ -1,12 +1,35 @@
-// @import "vars";
-// @import "global";
-// @import "fonts";
+@media (max-width: 1900px) {
+  .product-slider__inner {
+    text-align: center;
+  }
+  .product__item-category {
+    text-align: left;
+  }
+}
+@media (max-width: 1440px) {
+  .product-slider__inner {
+    .product__item {
+      max-width: 550px;
+    }
+  }
+}
+
 @media (max-width: 1400px) {
   .products .product__item {
-    flex-basis: calc(33.3333%-30px);
+    flex-basis: calc(33.3333% - 30px);
+  }
+}
+@media (max-width: 1225px) {
+  .product-slider__inner {
+    .product__item {
+      max-width: 350px;
+    }
   }
 }
 @media (max-width: 1200px) {
+  .tutorial__item {
+    padding: 0px 5px;
+  }
   .withdrawals__inner,
   .product-page__inner {
     .aside__item {
@@ -50,7 +73,7 @@
 
 @media (max-width: 1150px) {
   .products .product__item {
-    flex-basis: calc(50%-30px);
+    flex-basis: calc(50% - 30px);
     max-width: 100%;
   }
   .product__item-img {
@@ -75,6 +98,17 @@
   }
 }
 @media (max-width: 1020px) {
+  .tutorial__inner {
+    flex-wrap: wrap;
+    margin-left: -20px;
+  }
+  .tutorial__item {
+    margin-left: 20px;
+    flex-basis: calc(50% - 20px);
+    padding: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
   .personal-info__tabs.settings__tabs {
     display: block;
   }
@@ -91,6 +125,13 @@
   }
 }
 @media (max-width: 900px) {
+  .advantages__inner {
+    display: block;
+  }
+  .advantages__item {
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
   .menu__list {
     display: none;
     position: absolute;
@@ -186,6 +227,9 @@
   }
 }
 @media (max-width: 840px) {
+  .author {
+    min-height: 450px;
+  }
   .product-card__box {
     display: block;
   }
@@ -194,6 +238,13 @@
   }
   .icon-th-list {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  .product-slider__inner {
+    .product__item {
+      max-width: 100%;
+    }
   }
 }
 @media (max-width: 740px) {
@@ -208,13 +259,29 @@
   }
 }
 @media (max-width: 700px) {
-  .products .product__item  {
+  .products .product__item {
     flex-basis: 100%;
     max-width: 100%;
   }
+  .author__box {
+    display: block;
+    padding: 50px 15px;
+    text-align: center;
+  }
+  .author__title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
 }
-
 @media (max-width: 640px) {
+  .tutorial__item {
+    margin-left: 20px;
+    flex-basis: 100%;
+    padding: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
   .notification__box,
   .messege__box {
     display: none;
@@ -320,6 +387,15 @@
 }
 
 @media (max-width: 540px) {
+  .product-slider .slick-dots li {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .product-slider .slick-dots li button {
+    width: 12px;
+    height: 12px;
+  }
+
   .footer__col {
     min-width: 100%;
   }
@@ -383,6 +459,13 @@
 }
 
 @media (max-width: 520px) {
+  .login__wrapper .creat-acc {
+    width: 100%;
+  }
+  .login__wrapper button {
+    margin-right: 0;
+    width: 100%;
+  }
   .header__btn-menu {
     display: block;
   }
@@ -472,7 +555,10 @@
   }
 }
 
-@media (max-width: 391px) {
+@media (max-width: 390px) {
+  .fancybox-content{
+    padding: 44px 10px;
+  }
   .header__box {
     &.active {
       left: 47px;
@@ -486,7 +572,7 @@
   }
 }
 
-@media (max-width: 361px) {
+@media (max-width: 360px) {
   .user {
     margin-right: 0;
   }
