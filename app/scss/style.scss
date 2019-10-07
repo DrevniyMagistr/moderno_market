@@ -325,7 +325,6 @@
   width: 100%;
   padding-top: 90px;
   padding-bottom: 100px;
-  display:none;
 }
 .login__title {
   text-align: center;
@@ -486,12 +485,15 @@
   padding: 110px 0px;
   background-color: $grey;
 }
+.products__wrapper,
+.product-slider__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
 .products__inner-btn {
   text-align: center;
   margin-bottom: 60px;
-  height: 37px;
-  font-size: 14px;
   button {
     padding: 12px 21px;
     background-color: #fff;
@@ -510,8 +512,13 @@
 
 .products__inner-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-left: -30px;
   flex-wrap: wrap;
+}
+.products .product__item {
+  flex-basis: calc(25%-30px);
+  margin-left: 30px;
 }
 
 .product__item {
@@ -1156,9 +1163,10 @@ button.icon-unsorted {
 .product-page__content {
   width: 100%;
   .product__item {
+    flex-basis: calc(33.3333% - 30px);
     background-color: #fff;
-    max-width: 270px;
     transition: all 0.5s;
+    margin-left: 30px;
   }
   .product__item-img {
     min-height: 180px;
@@ -1182,9 +1190,10 @@ button.icon-unsorted {
 }
 .product-page__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 30px;
   flex-wrap: wrap;
+  margin-left: -30px;
 }
 
 .pagination__list {
@@ -1251,6 +1260,7 @@ button.icon-unsorted {
   .product__item {
     &.list {
       max-width: 100%;
+      flex-basis: 100%;
       .product__item-img {
         float: left;
         width: 240px;
@@ -1306,7 +1316,7 @@ button.icon-unsorted {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 0;
+  padding: 16px;
 }
 .product-card__images {
   max-width: 829px;
@@ -2278,7 +2288,7 @@ button.icon-unsorted {
 .withdrawals__content-items {
   padding-bottom: 35px;
 }
-.withdrawals__col-history{
+.withdrawals__col-history {
   height: 100%;
 }
 .withdrawals__content-item {
@@ -2286,15 +2296,15 @@ button.icon-unsorted {
   height: 42px;
   align-items: center;
   font-size: 13px;
-  color:#444;
-  &:nth-child(odd){
+  color: #444;
+  &:nth-child(odd) {
     background-color: #f9f9f9;
   }
 }
 .withdrawals__content-date {
   width: 154px;
   padding-left: 20px;
-  @include f500; 
+  @include f500;
 }
 .withdrawals__content-email {
   width: 180px;
@@ -2308,7 +2318,7 @@ button.icon-unsorted {
   width: 88px;
   @include f700;
   &.withdrawals__content-paid {
-    color:$green;
+    color: $green;
   }
 }
 // end withdrawals page
