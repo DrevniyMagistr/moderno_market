@@ -65,6 +65,25 @@ body {
 
 .product__item{
   background-color: #fff;
+  .product__item-top {
+    &:before {
+      position: absolute;
+      content: "\f0e7";
+      top: 11px;
+      left: 14px;
+      color: #fff;
+      font-family: "icomoon";
+      font-size: 18px;
+      z-index: 10;
+    }
+  }
+  .overlay {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 64px;
+    height: 63px;
+  }
 }
 
 .page-content{
