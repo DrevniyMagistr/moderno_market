@@ -533,9 +533,8 @@
     display: block;
     background-position: center;
     background-size: cover;
-    
   }
-  
+
   &-content {
     display: flex;
     justify-content: space-between;
@@ -1881,9 +1880,11 @@ button.icon-unsorted {
   padding: 30px 35px 80px;
 }
 .personal__line {
-  margin-bottom: 21px;
   display: flex;
   align-items: center;
+  form {
+    max-width: 540px;
+  }
   label {
     color: #444;
     width: 260px;
@@ -2122,6 +2123,7 @@ button.icon-unsorted {
     cursor: pointer;
   }
 }
+.personal__line,
 .upload-line,
 .withdrawals__form-line {
   margin-bottom: 25px;
@@ -2139,6 +2141,7 @@ button.icon-unsorted {
     }
   }
   select,
+  option,
   input,
   textarea {
     width: 100%;
@@ -2203,7 +2206,6 @@ button.icon-unsorted {
     width: 100%;
   }
   .jq-selectbox__select {
-    border: 1px solid #d7d7d7;
     height: 40px;
     background-color: #f9f9f9;
     border-bottom-color: #d7d7d7;
