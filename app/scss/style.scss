@@ -526,6 +526,7 @@
   width: 100%;
   box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
   margin-bottom: 30px;
+  position: relative;
   &-img {
     min-height: 250px;
     background-repeat: no-repeat;
@@ -533,6 +534,7 @@
     background-position: center;
     background-size: cover;
   }
+
   &-content {
     display: flex;
     justify-content: space-between;
@@ -1876,11 +1878,21 @@ button.icon-unsorted {
 }
 .page-box__content {
   padding: 30px 35px 80px;
+  button {
+    margin-left: 258px;
+    background-color: $green;
+    border: none;
+    padding: 16px 30px;
+    color: #fff;
+    cursor: pointer;
+  }
 }
 .personal__line {
-  margin-bottom: 21px;
   display: flex;
   align-items: center;
+  form {
+    max-width: 540px;
+  }
   label {
     color: #444;
     width: 260px;
@@ -1903,6 +1915,7 @@ button.icon-unsorted {
     background-color: #f9f9f9;
     padding: 0 10px;
   }
+  
 }
 // end personal info page
 
@@ -2119,6 +2132,11 @@ button.icon-unsorted {
     cursor: pointer;
   }
 }
+.jq-selectbox.jqselect {
+ max-width: 540px;
+}
+
+.personal__line,
 .upload-line,
 .withdrawals__form-line {
   margin-bottom: 25px;
@@ -2136,6 +2154,7 @@ button.icon-unsorted {
     }
   }
   select,
+  option,
   input,
   textarea {
     width: 100%;
@@ -2200,7 +2219,6 @@ button.icon-unsorted {
     width: 100%;
   }
   .jq-selectbox__select {
-    border: 1px solid #d7d7d7;
     height: 40px;
     background-color: #f9f9f9;
     border-bottom-color: #d7d7d7;
