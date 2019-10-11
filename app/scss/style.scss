@@ -1878,6 +1878,14 @@ button.icon-unsorted {
 }
 .page-box__content {
   padding: 30px 35px 80px;
+  button {
+    margin-left: 258px;
+    background-color: $green;
+    border: none;
+    padding: 16px 30px;
+    color: #fff;
+    cursor: pointer;
+  }
 }
 .personal__line {
   display: flex;
@@ -1907,6 +1915,7 @@ button.icon-unsorted {
     background-color: #f9f9f9;
     padding: 0 10px;
   }
+  
 }
 // end personal info page
 
@@ -2123,6 +2132,10 @@ button.icon-unsorted {
     cursor: pointer;
   }
 }
+.jq-selectbox.jqselect {
+ max-width: 540px;
+}
+
 .personal__line,
 .upload-line,
 .withdrawals__form-line {
