@@ -1915,7 +1915,9 @@ button.icon-unsorted {
     background-color: #f9f9f9;
     padding: 0 10px;
   }
-  
+  .jq-selectbox.jqselect {
+    max-width: 540px;
+   }
 }
 // end personal info page
 
@@ -2132,9 +2134,7 @@ button.icon-unsorted {
     cursor: pointer;
   }
 }
-.jq-selectbox.jqselect {
- max-width: 540px;
-}
+
 
 .personal__line,
 .upload-line,
